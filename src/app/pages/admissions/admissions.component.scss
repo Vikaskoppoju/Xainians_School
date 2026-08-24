@@ -1,0 +1,101 @@
+.process-card {
+  position: relative;
+  padding-top: 2.25rem;
+}
+.process-card__step {
+  position: absolute;
+  top: -14px;
+  left: 1.5rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-text);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eligibility-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  li { margin-bottom: 0.6rem; color: var(--color-text-muted); }
+}
+
+.enquiry-wrap {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-text);
+  }
+  input, select, textarea {
+    font-family: var(--font-body);
+    font-weight: 400;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  .error { color: #c0392b; font-weight: 500; }
+  .file-label input { padding: 0.4rem; }
+}
+
+.success-msg {
+  background: rgba(31, 167, 116, 0.1);
+  color: var(--color-accent);
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.download-card {
+  position: sticky;
+  top: 100px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
+}
+.download-card__media {
+  aspect-ratio: 3/2;
+  img { width: 100%; height: 100%; object-fit: cover; }
+}
+.download-card__body {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+.download-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  li { margin-bottom: 0.65rem; }
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+  a::before { content: '⬇'; }
+}
+
+@media (max-width: 900px) {
+  .enquiry-wrap { grid-template-columns: 1fr; }
+  .download-card { position: static; }
+}

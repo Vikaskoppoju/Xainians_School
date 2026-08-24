@@ -1,0 +1,76 @@
+<section class="page-hero page-hero--media">
+  <div class="page-hero__bg">
+    <img src="https://picsum.photos/seed/xis-news-hero/1800/700" alt="School assembly and event celebrations" loading="eager" />
+    <div class="page-hero__scrim"></div>
+  </div>
+  <div class="container page-hero__content">
+    <h1>News & Events</h1>
+    <p>Circulars, holidays, competitions, achievements and celebrations.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid--2">
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>📋 Circulars & Notices</h2>
+      </div>
+      <ul class="list-items">
+        <li *ngFor="let c of circulars">
+          <span class="date-chip">{{ c.date }}</span>
+          <span>{{ c.title }}</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>📅 Holiday List 2026-27</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="disclosure-table">
+          <thead><tr><th>Occasion</th><th>Date</th></tr></thead>
+          <tbody><tr *ngFor="let h of holidays"><td>{{ h.occasion }}</td><td>{{ h.date }}</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>🏆 Competitions</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card" *ngFor="let c of competitions">
+        <span class="badge">{{ c.date }}</span>
+        <h3>{{ c.title }}</h3>
+        <p>{{ c.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid--2">
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>🌟 Achievements</h2>
+      </div>
+      <ul class="list-items list-items--plain">
+        <li *ngFor="let a of achievements">{{ a }}</li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>🌍 International Day Celebrations</h2>
+      </div>
+      <ul class="list-items">
+        <li *ngFor="let i of intlDays">
+          <span class="date-chip">{{ i.date }}</span>
+          <span>{{ i.day }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+<section class="page-hero page-hero--media">
+  <div class="page-hero__bg">
+    <img src="https://picsum.photos/seed/xis-portal-hero/1800/700" alt="Parent using a laptop to check student progress" loading="eager" />
+    <div class="page-hero__scrim"></div>
+  </div>
+  <div class="container page-hero__content">
+    <h1>Parent Portal</h1>
+    <p>One place for attendance, report cards, fees, homework and PTM schedules.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid--2 portal-wrap">
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>What You Can Do Here</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card feature-card" *ngFor="let f of features">
+          <div class="feature-card__icon">{{ f.icon }}</div>
+          <h4>{{ f.title }}</h4>
+          <p>{{ f.desc }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>Parent Login</h2>
+      </div>
+      <form class="card login-form" #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)" novalidate>
+        <label>
+          Student ID / Admission Number *
+          <input type="text" name="studentId" [(ngModel)]="credentials.studentId" required #sid="ngModel" />
+          <small class="error" *ngIf="sid.invalid && sid.touched">Required</small>
+        </label>
+        <label>
+          Password *
+          <input type="password" name="password" [(ngModel)]="credentials.password" required #pwd="ngModel" />
+          <small class="error" *ngIf="pwd.invalid && pwd.touched">Required</small>
+        </label>
+        <button type="submit" class="btn btn--primary">Log In</button>
+        <p class="info-msg" *ngIf="error" role="status">{{ error }}</p>
+        <p class="help-text">Forgot your password or new to the school? Contact the office at
+          <a href="tel:+911234567890">+91 12345 67890</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>

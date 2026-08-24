@@ -1,0 +1,36 @@
+.list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+  }
+}
+.list-items--plain li {
+  display: list-item;
+  background: none;
+  border: none;
+  padding: 0 0 0 0.25rem;
+  margin-left: 1.25rem;
+  color: var(--color-text-muted);
+}
+
+.date-chip {
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}

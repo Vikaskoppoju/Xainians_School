@@ -1,0 +1,103 @@
+<section class="page-hero page-hero--media">
+  <div class="page-hero__bg">
+    <img src="https://picsum.photos/seed/xis-academics-hero/1800/700" alt="Students engaged in a classroom lesson" loading="eager" />
+    <div class="page-hero__scrim"></div>
+  </div>
+  <div class="container page-hero__content">
+    <h1>Academics</h1>
+    <p>Curriculum, teaching methods, subjects, calendar, exams and results.</p>
+  </div>
+</section>
+
+<section class="section" id="curriculum">
+  <div class="container">
+    <div class="section-title">
+      <h2>Curriculum — LKG to XII</h2>
+      <p>A structured, age-appropriate progression across five academic stages.</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="card stage-card" *ngFor="let s of stages">
+        <div class="stage-card__media">
+          <img [src]="s.img" [alt]="s.name + ' classroom'" loading="lazy" />
+        </div>
+        <div class="stage-card__body">
+          <span class="badge">{{ s.grades }}</span>
+          <h3>{{ s.name }}</h3>
+          <p>{{ s.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>International Teaching Methods</h2>
+      <p>Bringing global best practices into every classroom.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="card" *ngFor="let m of methods">
+        <h3>{{ m.title }}</h3>
+        <p>{{ m.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Subjects Offered</h2>
+    </div>
+    <div class="subject-tags">
+      <span class="tag" *ngFor="let sub of subjects">{{ sub }}</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container grid grid--2">
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>Academic Calendar 2026-27</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="disclosure-table">
+          <thead><tr><th>Milestone</th><th>Date</th></tr></thead>
+          <tbody>
+            <tr *ngFor="let c of calendar"><td>{{ c.term }}</td><td>{{ c.date }}</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>Exam Pattern (per term)</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="disclosure-table">
+          <thead><tr><th>Assessment Component</th><th>Weightage</th></tr></thead>
+          <tbody>
+            <tr *ngFor="let e of examPattern"><td>{{ e.component }}</td><td>{{ e.weight }}</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="results">
+  <div class="container">
+    <div class="section-title">
+      <h2>Board Results</h2>
+      <p>Consistent record of academic performance in CBSE board examinations.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="card result-card" *ngFor="let r of results">
+        <strong>{{ r.value }}</strong>
+        <span>{{ r.metric }} — {{ r.year }}</span>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<section class="page-hero page-hero--media">
+  <div class="page-hero__bg">
+    <img src="https://picsum.photos/seed/xis-gallery-hero/1800/700" alt="Students celebrating at a school event" loading="eager" />
+    <div class="page-hero__scrim"></div>
+  </div>
+  <div class="container page-hero__content">
+    <h1>Gallery</h1>
+    <p>Moments from Annual Day, Picnics, Sports Day, class activities and our Batengoo campus.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filters">
+      <button type="button" *ngFor="let c of categories" [class.active]="active === c" (click)="setActive(c)">
+        {{ c }}
+      </button>
+    </div>
+
+    <div class="grid grid--4 gallery-grid">
+      <div class="gallery-item" *ngFor="let item of filtered">
+        <div class="gallery-item__thumb">
+          <img [src]="item.img" [alt]="item.title" loading="lazy" />
+          <span class="gallery-item__type">{{ item.type === 'video' ? '▶ Video' : '📷 Photo' }}</span>
+        </div>
+        <p>{{ item.title }}</p>
+      </div>
+    </div>
+  </div>
+</section>

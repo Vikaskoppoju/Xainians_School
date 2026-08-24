@@ -1,0 +1,26 @@
+<section class="page-hero page-hero--media">
+  <div class="page-hero__bg">
+    <img src="https://picsum.photos/seed/xis-facilities-hero/1800/700" alt="Xainians International School campus facilities" loading="eager" />
+    <div class="page-hero__scrim"></div>
+  </div>
+  <div class="container page-hero__content">
+    <h1>Facilities</h1>
+    <p>A campus designed for safety, learning and holistic growth.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid--3">
+      <div class="card facility-card" *ngFor="let f of facilities">
+        <div class="facility-card__media">
+          <img [src]="f.img" [alt]="f.title" loading="lazy" />
+        </div>
+        <div class="facility-card__body">
+          <h3>{{ f.title }}</h3>
+          <p>{{ f.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

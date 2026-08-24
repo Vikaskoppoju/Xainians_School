@@ -1,0 +1,172 @@
+<section class="page-hero page-hero--media">
+  <div class="page-hero__bg">
+    <img src="https://picsum.photos/seed/xis-admissions-hero/1800/700" alt="Students walking into Xainians International School" loading="eager" />
+    <div class="page-hero__scrim"></div>
+  </div>
+  <div class="container page-hero__content">
+    <h1>Admissions</h1>
+    <p>Session 2026-27 admissions are now open for LKG to XI.</p>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-title">
+      <h2>Admission Process</h2>
+    </div>
+    <div class="grid grid--4">
+      <div class="card process-card" *ngFor="let p of process">
+        <span class="process-card__step">{{ p.step }}</span>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container grid grid--2">
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:1.25rem;">
+        <h2>Age Criteria</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="disclosure-table">
+          <thead><tr><th>Grade</th><th>Minimum Age</th></tr></thead>
+          <tbody><tr *ngFor="let a of ageCriteria"><td>{{ a.grade }}</td><td>{{ a.age }}</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card eligibility-card">
+      <h3>Eligibility</h3>
+      <ul>
+        <li>Valid birth certificate for LKG/UKG/Class I admissions.</li>
+        <li>Report card and Transfer Certificate for lateral entries (Class II onwards).</li>
+        <li>Aadhaar card copy of the student (if available).</li>
+        <li>4 recent passport-size photographs of the student.</li>
+        <li>Residence proof of parent/guardian.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="enquiry">
+  <div class="container">
+    <div class="section-title">
+      <h2>Online Enquiry Form</h2>
+      <p>Fill this form and our admission office will contact you within 2 working days.</p>
+    </div>
+
+    <div class="enquiry-wrap">
+      <form class="card enquiry-form" #enquiryForm="ngForm" (ngSubmit)="onSubmit(enquiryForm)" novalidate>
+        <div class="grid grid--2">
+          <label>
+            Student's Full Name *
+            <input type="text" name="studentName" [(ngModel)]="model.studentName" required #studentName="ngModel" />
+            <small class="error" *ngIf="studentName.invalid && studentName.touched">Required</small>
+          </label>
+          <label>
+            Date of Birth *
+            <input type="date" name="dob" [(ngModel)]="model.dob" required #dob="ngModel" />
+            <small class="error" *ngIf="dob.invalid && dob.touched">Required</small>
+          </label>
+          <label>
+            Grade Applying For *
+            <select name="gradeApplying" [(ngModel)]="model.gradeApplying" required #grade="ngModel">
+              <option value="" disabled selected>Select grade</option>
+              <option>LKG</option><option>UKG</option>
+              <option *ngFor="let g of [1,2,3,4,5,6,7,8,9,10,11,12]">Class {{ g }}</option>
+            </select>
+            <small class="error" *ngIf="grade.invalid && grade.touched">Required</small>
+          </label>
+          <label>
+            Parent/Guardian Name *
+            <input type="text" name="parentName" [(ngModel)]="model.parentName" required #parentName="ngModel" />
+            <small class="error" *ngIf="parentName.invalid && parentName.touched">Required</small>
+          </label>
+          <label>
+            Phone Number *
+            <input type="tel" name="phone" [(ngModel)]="model.phone" required pattern="^[0-9+\-\s]{7,15}$" #phone="ngModel" />
+            <small class="error" *ngIf="phone.invalid && phone.touched">Enter a valid phone number</small>
+          </label>
+          <label>
+            Email Address *
+            <input type="email" name="email" [(ngModel)]="model.email" required email #email="ngModel" />
+            <small class="error" *ngIf="email.invalid && email.touched">Enter a valid email</small>
+          </label>
+        </div>
+
+        <label>
+          Address
+          <textarea name="address" rows="2" [(ngModel)]="model.address"></textarea>
+        </label>
+
+        <label>
+          Message / Query
+          <textarea name="message" rows="3" [(ngModel)]="model.message"></textarea>
+        </label>
+
+        <label class="file-label">
+          Upload Documents (Birth Certificate / Previous Report Card)
+          <input type="file" (change)="onFileSelected($event)" accept=".pdf,.jpg,.jpeg,.png" />
+          <small *ngIf="documentFile">Selected: {{ documentFile.name }}</small>
+        </label>
+
+        <button type="submit" class="btn btn--primary">Submit Enquiry</button>
+        <p class="success-msg" *ngIf="submitted" role="status">
+          ✅ Thank you! Your enquiry has been received. Our admission office will reach out shortly.
+        </p>
+      </form>
+
+      <div class="download-card">
+        <div class="download-card__media">
+          <img src="https://picsum.photos/seed/xis-admissions-side/600/400" alt="Student receiving admission counselling" loading="lazy" />
+        </div>
+        <div class="card download-card__body">
+        <h3>📄 Downloads</h3>
+        <ul class="download-list">
+          <li><a href="assets/downloads/admission-form.pdf" download>Admission Form (PDF)</a></li>
+          <li><a href="assets/downloads/transfer-certificate-form.pdf" download>Transfer Certificate Form (PDF)</a></li>
+          <li><a href="assets/downloads/fee-structure.pdf" download>Fee Structure (PDF)</a></li>
+          <li><a href="assets/downloads/academic-calendar.pdf" download>Academic Calendar (PDF)</a></li>
+        </ul>
+        <h3>🎓 Scholarships</h3>
+        <p>Merit and need-based scholarships are available for meritorious students and children of defense
+          personnel/single-parent households. Up to 50% tuition fee waiver, assessed case-by-case. Contact the
+          admission office for the scholarship application form.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Fee Structure</h2>
+      <p>Indicative annual fee — final structure shared at the time of admission.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="disclosure-table">
+        <thead><tr><th>Grade</th><th>Admission Fee (one-time)</th><th>Tuition Fee (per annum)</th></tr></thead>
+        <tbody>
+          <tr *ngFor="let f of fees"><td>{{ f.grade }}</td><td>{{ f.admission }}</td><td>{{ f.tuitionPerAnnum }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Important Dates</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card" *ngFor="let d of importantDates">
+        <h3>{{ d.date }}</h3>
+        <p>{{ d.label }}</p>
+      </div>
+    </div>
+  </div>
+</section>

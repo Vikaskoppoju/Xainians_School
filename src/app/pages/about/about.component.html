@@ -1,0 +1,96 @@
+<section class="page-hero page-hero--media">
+  <div class="page-hero__bg">
+    <img src="https://picsum.photos/seed/xis-about-hero/1800/700" alt="Xainians International School campus" loading="eager" />
+    <div class="page-hero__scrim"></div>
+  </div>
+  <div class="container page-hero__content">
+    <h1>About Us</h1>
+    <p>Our story, our purpose, and the people who guide Xainians International School.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid--2 history">
+    <div>
+      <span class="badge">Our History</span>
+      <h2>A Legacy of Learning Since 2000</h2>
+      <p>Founded in the town of Anantnag, Xainians International School began with a simple vision — to give
+        children of the Valley access to world-class education without leaving home. From a handful of
+        classrooms, we have grown into a full-fledged LKG–XII campus at Batengoo, known for academic rigor,
+        cultural richness, and a nurturing environment.</p>
+      <p>Today, we are proud to be a CBSE-affiliated institution trusted by thousands of families across
+        Anantnag and the surrounding districts.</p>
+    </div>
+    <div class="history__image">
+      <img src="https://picsum.photos/seed/xis-history/700/560" alt="Historic photo of the school campus" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container grid grid--2">
+    <div class="card">
+      <h3>🎯 Our Mission</h3>
+      <p>To provide holistic, values-based education that blends academic excellence with international
+        teaching methods, preparing students to thrive as responsible global citizens.</p>
+    </div>
+    <div class="card">
+      <h3>🔭 Our Vision</h3>
+      <p>To be the region's most trusted center of learning — where every child discovers their potential in a
+        safe, inclusive and technology-enabled environment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container principal-msg">
+    <div class="principal-msg__photo">
+      <img src="https://i.pravatar.cc/480?img=44" alt="Principal portrait" loading="lazy" />
+    </div>
+    <div>
+      <span class="badge">Principal's Message</span>
+      <h2>Building Confident, Compassionate Learners</h2>
+      <p>"Education today must go beyond textbooks. At Xainians, we focus on curiosity, critical thinking, and
+        character alongside academics. I invite every parent to visit our campus and see firsthand the care
+        we put into each child's journey."</p>
+      <p class="signature">Principal, Xainians International School</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Management Team</h2>
+      <p>Guided by an experienced managing committee committed to educational excellence.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="card team-card" *ngFor="let m of management">
+        <div class="team-card__avatar">
+          <img [src]="m.avatar" [alt]="m.name" loading="lazy" />
+        </div>
+        <h4>{{ m.name }}</h4>
+        <p>{{ m.role }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="disclosures">
+  <div class="container">
+    <div class="section-title">
+      <h2>Affiliation & Mandatory Disclosures</h2>
+      <p>As required by CBSE guidelines, in the interest of transparency.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="disclosure-table">
+        <tbody>
+          <tr *ngFor="let d of disclosures">
+            <th>{{ d.label }}</th>
+            <td>{{ d.value }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

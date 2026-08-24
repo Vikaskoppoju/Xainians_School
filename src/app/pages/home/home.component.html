@@ -1,0 +1,165 @@
+<div id="main-content">
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="https://picsum.photos/seed/xis-hero/1800/1000" alt="Students at Xainians International School campus" loading="eager" />
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="badge badge--light">CBSE Affiliated · Batengoo, Anantnag</span>
+        <h1>Shaping Global Thinkers, Rooted in Values</h1>
+        <p>Xainians International School blends international teaching methods with strong academic foundations —
+          empowering students from LKG to XII to lead with confidence.</p>
+        <div class="hero__actions">
+          <a routerLink="/admissions" class="btn btn--primary">Apply for 2026-27</a>
+          <a routerLink="/facilities" class="btn btn--outline">Take a Virtual Tour</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-card container">
+      <div class="stats-card__inner">
+        <div class="stat" *ngFor="let s of stats">
+          <strong>{{ s.value }}</strong>
+          <span>{{ s.label }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-notice-ticker></app-notice-ticker>
+
+  <section class="section programs">
+    <div class="container">
+      <div class="section-title">
+        <h2>Explore Our Programs</h2>
+        <p>A structured academic journey from Pre-Primary through Senior Secondary.</p>
+      </div>
+      <div class="grid grid--4">
+        <a routerLink="/academics" class="program-card" *ngFor="let p of programs">
+          <div class="program-card__media">
+            <img [src]="p.img" [alt]="p.name + ' students at Xainians International School'" loading="lazy" />
+          </div>
+          <div class="program-card__body">
+            <span>{{ p.grades }}</span>
+            <h3>{{ p.name }}</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt principal">
+    <div class="container principal__inner">
+      <div class="principal__photo">
+        <img src="https://i.pravatar.cc/480?img=44" alt="Principal of Xainians International School" loading="lazy" />
+      </div>
+      <div class="principal__text">
+        <span class="badge">Principal's Welcome</span>
+        <h2>A Note from Our Principal</h2>
+        <p>"At Xainians International School, we believe every child carries a unique spark. Our mission is to
+          nurture that spark through a curriculum that balances academic rigor, creativity, and character.
+          Our doors in Batengoo are open to families who want their children to grow into confident,
+          compassionate global citizens. Welcome to our school family."</p>
+        <p class="signature">— Principal, Xainians International School</p>
+        <a routerLink="/about" class="btn btn--ghost">Read More About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlights">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Families Choose Us</h2>
+        <p>A safe, modern campus built for holistic learning.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card highlight-card" *ngFor="let h of highlights">
+          <div class="highlight-card__icon">{{ h.icon }}</div>
+          <h3>{{ h.title }}</h3>
+          <p>{{ h.text }}</p>
+        </div>
+      </div>
+      <div class="highlights__cta">
+        <a routerLink="/facilities" class="btn btn--primary">Explore All Facilities</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt campus-life">
+    <div class="container">
+      <div class="section-title">
+        <h2>Life at Batengoo Campus</h2>
+        <p>A glimpse into everyday moments, celebrations and achievements.</p>
+      </div>
+      <div class="campus-life__strip">
+        <div class="campus-life__item" *ngFor="let c of campusLife">
+          <img [src]="c.img" [alt]="c.caption" loading="lazy" />
+          <span>{{ c.caption }}</span>
+        </div>
+      </div>
+      <div class="highlights__cta">
+        <a routerLink="/gallery" class="btn btn--ghost">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our School Family Says</h2>
+        <p>Real stories from parents and students of Xainians International School.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card testimonial-card" *ngFor="let t of testimonials">
+          <p class="testimonial-card__quote">"{{ t.quote }}"</p>
+          <div class="testimonial-card__author">
+            <img [src]="t.avatar" [alt]="t.name" loading="lazy" />
+            <div>
+              <strong>{{ t.name }}</strong>
+              <span>{{ t.role }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt events">
+    <div class="container">
+      <div class="section-title">
+        <h2>Upcoming Events</h2>
+        <p>Stay updated with what's happening on campus.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card event-card" *ngFor="let e of events">
+          <div class="event-card__media">
+            <img [src]="e.img" [alt]="e.title" loading="lazy" />
+            <span class="event-card__date">{{ e.date }}</span>
+          </div>
+          <div class="event-card__body">
+            <h3>{{ e.title }}</h3>
+            <p>{{ e.desc }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="highlights__cta">
+        <a routerLink="/news" class="btn btn--ghost">View All News & Events</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-band__bg">
+      <img src="https://picsum.photos/seed/xis-cta/1800/700" alt="Xainians International School students" loading="lazy" />
+      <div class="cta-band__scrim"></div>
+    </div>
+    <div class="container cta-band__inner">
+      <div>
+        <h2>Admissions Open — Session 2026-27</h2>
+        <p>Seats are limited for LKG to XI. Begin your child's journey with us today.</p>
+      </div>
+      <a routerLink="/admissions" class="btn btn--primary">Start Online Enquiry</a>
+    </div>
+  </section>
+</div>

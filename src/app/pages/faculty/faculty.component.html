@@ -1,0 +1,50 @@
+<section class="page-hero page-hero--media">
+  <div class="page-hero__bg">
+    <img src="https://picsum.photos/seed/xis-faculty-hero/1800/700" alt="Teacher engaging with students in a classroom" loading="eager" />
+    <div class="page-hero__scrim"></div>
+  </div>
+  <div class="container page-hero__content">
+    <h1>Faculty & Staff</h1>
+    <p>Meet the educators shaping our students' journey.</p>
+  </div>
+</section>
+
+<section class="section stats">
+  <div class="container grid grid--4">
+    <div class="stat" *ngFor="let s of stats">
+      <strong>{{ s.value }}</strong>
+      <span>{{ s.label }}</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Teachers</h2>
+      <p>Qualified, experienced and committed educators across every stage.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="card teacher-card" *ngFor="let t of teachers">
+        <div class="teacher-card__avatar">
+          <img [src]="t.avatar" [alt]="t.name" loading="lazy" />
+        </div>
+        <h4>{{ t.name }}</h4>
+        <p class="subject">{{ t.subject }}</p>
+        <p class="qualification">{{ t.qualification }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Teacher Training Programs</h2>
+      <p>We invest continuously in our faculty's growth.</p>
+    </div>
+    <ul class="training-list">
+      <li *ngFor="let t of training">{{ t }}</li>
+    </ul>
+  </div>
+</section>

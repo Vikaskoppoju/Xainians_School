@@ -1,0 +1,10 @@
+<div class="ticker">
+  <span class="ticker__label">📢 Notice Board</span>
+  <div class="ticker__track">
+    <div class="ticker__content">
+      <span *ngFor="let n of notices">{{ n }}</span>
+      <span *ngFor="let n of notices">{{ n }}</span>
+    </div>
+  </div>
+  <a routerLink="/news" class="ticker__link">View All</a>
+</div>
