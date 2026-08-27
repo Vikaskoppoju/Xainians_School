@@ -1,18 +1,18 @@
 <div id="main-content">
   <section class="hero">
     <div class="hero__bg">
-      <img src="https://picsum.photos/seed/xis-hero/1800/1000" alt="Students at Xainians International School campus" loading="eager" />
+      <img src="assets/gallery/graduation-group.jpg" alt="Students at Saint Xain's International School graduation" loading="eager" />
       <div class="hero__scrim"></div>
     </div>
     <div class="container hero__inner">
       <div class="hero__text">
-        <span class="badge badge--light">CBSE Affiliated · Batengoo, Anantnag</span>
+        <span class="badge badge--light">17 Years of Standing Up for the Students · Anantnag</span>
         <h1>Shaping Global Thinkers, Rooted in Values</h1>
-        <p>Xainians International School blends international teaching methods with strong academic foundations —
-          empowering students from LKG to XII to lead with confidence.</p>
+        <p>Saint Xain's International School blends Thinkroom pedagogy and hands-on technology with strong
+          academic foundations — empowering scholars from Pre-Nursery to Class X to lead with confidence.</p>
         <div class="hero__actions">
-          <a routerLink="/admissions" class="btn btn--primary">Apply for 2026-27</a>
-          <a routerLink="/facilities" class="btn btn--outline">Take a Virtual Tour</a>
+          <a routerLink="/admissions" class="btn btn--primary">Start an Enquiry</a>
+          <a routerLink="/facilities" class="btn btn--outline">Explore the Campus</a>
         </div>
       </div>
     </div>
@@ -33,12 +33,12 @@
     <div class="container">
       <div class="section-title">
         <h2>Explore Our Programs</h2>
-        <p>A structured academic journey from Pre-Primary through Senior Secondary.</p>
+        <p>A structured academic journey from Pre-Primary through Secondary.</p>
       </div>
       <div class="grid grid--4">
         <a routerLink="/academics" class="program-card" *ngFor="let p of programs">
           <div class="program-card__media">
-            <img [src]="p.img" [alt]="p.name + ' students at Xainians International School'" loading="lazy" />
+            <img [src]="p.img" [alt]="p.name + ' at Saint Xain\'s International School'" loading="lazy" />
           </div>
           <div class="program-card__body">
             <span>{{ p.grades }}</span>
@@ -52,16 +52,15 @@
   <section class="section section--alt principal">
     <div class="container principal__inner">
       <div class="principal__photo">
-        <img src="https://i.pravatar.cc/480?img=44" alt="Principal of Xainians International School" loading="lazy" />
+        <img src="https://i.pravatar.cc/480?img=45" alt="Principal of Saint Xain's International School" loading="lazy" />
       </div>
       <div class="principal__text">
-        <span class="badge">Principal's Welcome</span>
+        <span class="badge">The Principal's Voice</span>
         <h2>A Note from Our Principal</h2>
-        <p>"At Xainians International School, we believe every child carries a unique spark. Our mission is to
-          nurture that spark through a curriculum that balances academic rigor, creativity, and character.
-          Our doors in Batengoo are open to families who want their children to grow into confident,
-          compassionate global citizens. Welcome to our school family."</p>
-        <p class="signature">— Principal, Xainians International School</p>
+        <p>"Education is the lone way of progress in every society. We here at Saint Xain's International
+          School are fully committed towards achieving the holistic development of our students, translating
+          their intellectual and emotional potential into an entity of realistic worth and value."</p>
+        <p class="signature">— Dr. Fahmeeda Jan, Principal</p>
         <a routerLink="/about" class="btn btn--ghost">Read More About Us</a>
       </div>
     </div>
@@ -89,7 +88,7 @@
   <section class="section section--alt campus-life">
     <div class="container">
       <div class="section-title">
-        <h2>Life at Batengoo Campus</h2>
+        <h2>Life at Our Anantnag Campus</h2>
         <p>A glimpse into everyday moments, celebrations and achievements.</p>
       </div>
       <div class="campus-life__strip">
@@ -108,7 +107,7 @@
     <div class="container">
       <div class="section-title">
         <h2>What Our School Family Says</h2>
-        <p>Real stories from parents and students of Xainians International School.</p>
+        <p>Real reviews from parents of Saint Xain's International School.</p>
       </div>
       <div class="grid grid--3">
         <div class="card testimonial-card" *ngFor="let t of testimonials">
@@ -128,36 +127,36 @@
   <section class="section section--alt events">
     <div class="container">
       <div class="section-title">
-        <h2>Upcoming Events</h2>
-        <p>Stay updated with what's happening on campus.</p>
+        <h2>Recent Achievements</h2>
+        <p>Our scholars continue to bring laurels to the institute.</p>
       </div>
       <div class="grid grid--3">
-        <div class="card event-card" *ngFor="let e of events">
+        <div class="card event-card" *ngFor="let a of achievements">
           <div class="event-card__media">
-            <img [src]="e.img" [alt]="e.title" loading="lazy" />
-            <span class="event-card__date">{{ e.date }}</span>
+            <img [src]="a.img" [alt]="a.title" loading="lazy" />
+            <span class="event-card__date">{{ a.tag }}</span>
           </div>
           <div class="event-card__body">
-            <h3>{{ e.title }}</h3>
-            <p>{{ e.desc }}</p>
+            <h3>{{ a.title }}</h3>
+            <p>{{ a.desc }}</p>
           </div>
         </div>
       </div>
       <div class="highlights__cta">
-        <a routerLink="/news" class="btn btn--ghost">View All News & Events</a>
+        <a routerLink="/news" class="btn btn--ghost">View All Achievements</a>
       </div>
     </div>
   </section>
 
   <section class="cta-band">
     <div class="cta-band__bg">
-      <img src="https://picsum.photos/seed/xis-cta/1800/700" alt="Xainians International School students" loading="lazy" />
+      <img src="assets/gallery/coding-lab-boys.jpg" alt="Saint Xain's International School students" loading="lazy" />
       <div class="cta-band__scrim"></div>
     </div>
     <div class="container cta-band__inner">
       <div>
-        <h2>Admissions Open — Session 2026-27</h2>
-        <p>Seats are limited for LKG to XI. Begin your child's journey with us today.</p>
+        <h2>Admissions Open</h2>
+        <p>Seats are open for Pre-Nursery to Class X. Begin your child's journey with us today.</p>
       </div>
       <a routerLink="/admissions" class="btn btn--primary">Start Online Enquiry</a>
     </div>

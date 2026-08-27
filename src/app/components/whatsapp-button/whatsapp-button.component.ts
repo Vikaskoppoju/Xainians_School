@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './whatsapp-button.component.scss'
 })
 export class WhatsappButtonComponent {
-  message = encodeURIComponent('Hi, I want admission details for Xainians International School.');
-  phone = '911234567890';
+  message = encodeURIComponent('Hi, I want admission details for Saint Xain\'s International School.');
+  phone = '919596017941';
 }

@@ -9,47 +9,33 @@ import { CommonModule } from '@angular/common';
 })
 export class AcademicsComponent {
   stages = [
-    { name: 'Pre-Primary', grades: 'LKG – UKG', desc: 'Play-way learning, phonics, motor skills, and Montessori-inspired activities.', img: 'https://picsum.photos/seed/xis-stage-preprimary/500/380' },
-    { name: 'Primary', grades: 'I – V', desc: 'Foundational literacy, numeracy, EVS and activity-based learning.', img: 'https://picsum.photos/seed/xis-stage-primary/500/380' },
-    { name: 'Middle', grades: 'VI – VIII', desc: 'Concept-based teaching with STEM, languages, and skill electives.', img: 'https://picsum.photos/seed/xis-stage-middle/500/380' },
-    { name: 'Secondary', grades: 'IX – X', desc: 'CBSE curriculum with focused board-exam preparation.', img: 'https://picsum.photos/seed/xis-stage-secondary/500/380' },
-    { name: 'Senior Secondary', grades: 'XI – XII', desc: 'Science, Commerce & Humanities streams with career counselling.', img: 'https://picsum.photos/seed/xis-stage-senior/500/380' }
+    { name: 'Pre-Primary', grades: 'Pre-Nursery · Nursery · LKG', desc: 'Motivating, inspiring and supporting young buds in a safe, loving, play-way environment that builds listening, writing and reading skills.', img: 'assets/gallery/vr-classroom.jpg' },
+    { name: 'Primary', grades: 'Class I – V', desc: 'Emphasis on creative and critical abilities, spoken language development, voice modulation and creative writing under proper supervision.', img: 'assets/gallery/picnic-boats.jpg' },
+    { name: 'Middle', grades: 'Class VI – VIII', desc: 'Students become active participants in learning, craft their own answers, and develop a scientific temperament across science, social science and language.', img: 'assets/gallery/robotics-lab-girls.jpg' },
+    { name: 'Secondary', grades: 'Class IX – X', desc: 'Students are counselled to broaden their knowledge with a creative, critical perspective and a sound foundation for board exams and beyond.', img: 'assets/gallery/science-lab.jpg' }
   ];
 
   methods = [
-    { title: 'Inquiry-Based Learning', desc: 'Students explore concepts through questions, projects and hands-on activities.' },
-    { title: 'Smart-Class Integration', desc: 'Digital boards and multimedia content across every classroom.' },
-    { title: 'Global Curriculum Elements', desc: 'CBSE core enriched with international pedagogy and life-skills modules.' },
-    { title: 'Continuous Assessment', desc: 'Regular formative assessments alongside term examinations.' }
+    { title: 'Thinkroom Technology', desc: 'Our classrooms are Thinkrooms — aligned to NEP 2020 — where every child thinks, wonders, questions and expresses freely, with the teacher as a facilitator.' },
+    { title: 'Chrysalis Approach', desc: 'An innovative, internationally-benchmarked teaching-learning methodology that our parents and staff consistently praise for its real impact in the classroom.' },
+    { title: 'AI & Robotics Lab', desc: 'Hands-on experience with the latest technologies, encouraging innovation, creativity and problem-solving from an early age.' },
+    { title: 'IIT / NEET Foundation Classes', desc: 'Foundation classes from Class 6th to 10th to build a head-start for competitive exams like IIT, JEE and NEET.' },
+    { title: 'Language Lab', desc: 'Technical tools that give students the best samples of pronunciation, stimulating quicker and easier language acquisition.' },
+    { title: 'Department of Creative Writing', desc: 'Grooming students\' creative abilities through Free Writing, Hierarchical Easy Writing, Self Writing and Creative Writing.' }
   ];
 
   subjects = [
-    'English', 'Hindi/Urdu', 'Mathematics', 'Science', 'Social Science', 'Computer Science',
-    'Physical Education', 'Art & Craft', 'Environmental Studies', 'Physics', 'Chemistry', 'Biology',
-    'Commerce', 'Economics', 'Accountancy', 'Business Studies', 'Political Science', 'History'
+    'English', 'Urdu', 'Arabic', 'Mathematics', 'Science', 'Social Science', 'Computer Science',
+    'AI & Robotics', 'Physical Education', 'Creative Writing', 'Art & Craft', 'Environmental Studies'
   ];
 
-  calendar = [
-    { term: 'Term I Begins', date: '01 April 2026' },
-    { term: 'Summer Vacation', date: '15 June – 15 July 2026' },
-    { term: 'Half-Yearly Examinations', date: '22 – 30 Sept 2026' },
-    { term: 'Winter Break', date: '25 Dec 2026 – 02 Jan 2027' },
-    { term: 'Annual Examinations', date: '05 – 20 March 2027' },
-    { term: 'Result Declaration', date: '31 March 2027' }
-  ];
-
-  examPattern = [
-    { component: 'Periodic Tests', weight: '10 Marks' },
-    { component: 'Notebook Submission', weight: '5 Marks' },
-    { component: 'Subject Enrichment Activity', weight: '5 Marks' },
-    { component: 'Half-Yearly Examination', weight: '80 Marks' },
-    { component: 'Annual Examination', weight: '80 Marks' }
-  ];
+  examWing = 'Saint Xain\'s International School prioritizes transparency and fairness in exams. Students can access their answer scripts post-exam, allowing them to understand their performance and feedback. Our rigorous exam process ensures academic integrity and the highest standards of trust and fairness.';
 
   results = [
-    { year: '2025', metric: 'Class X Pass %', value: '100%' },
-    { year: '2025', metric: 'Class XII Pass %', value: '98.5%' },
-    { year: '2024', metric: 'Class X Pass %', value: '100%' },
-    { year: '2024', metric: 'Class XII Pass %', value: '97%' }
+    { year: '2024-25', headline: '100% Result · 100% Distinctions', detail: '73 scholars appeared for Class X boards. Abdul Hanan, Muhammad Tauha and Sania Maqbool Nisar ranked 3rd and 5th in the Kashmir Division.' },
+    { year: '2023-24', headline: 'All 51 Students Score 450+', detail: 'Every student who appeared secured more than 450 marks. Madiha Bilal and Rahil Yousuf secured 2nd and 3rd position in the Kashmir Division.' },
+    { year: '2022-23', headline: '100% Result · 80 Students Score 450+', detail: '86 scholars appeared for Class X boards. Faisal Mehraj and Zaid Nisar secured 3rd position in the Kashmir Division.' },
+    { year: '2020-21', headline: '100% Result · 100% Distinctions', detail: '70 scholars appeared for Class X boards, with one scholar bagging the 1st position in the Kashmir Division.' },
+    { year: '2019-20', headline: '100% Result · 100% Distinctions', detail: '55 scholars appeared for Class X boards, with one scholar achieving the 2nd position in the Kashmir Division.' }
   ];
 }

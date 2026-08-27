@@ -55,3 +55,33 @@
     align-items: flex-start;
   }
 }
+
+.partner-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.partner-tags .tag {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  padding: 0.65rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.testimonial-card__quote {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.55;
+  margin: 0;
+}
+.testimonial-card strong { font-size: 0.92rem; }
+.testimonial-card span { font-size: 0.82rem; color: var(--color-text-muted); }

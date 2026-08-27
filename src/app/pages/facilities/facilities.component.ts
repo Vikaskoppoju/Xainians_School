@@ -9,15 +9,13 @@ import { CommonModule } from '@angular/common';
 })
 export class FacilitiesComponent {
   facilities = [
-    { title: 'Smart Classrooms', desc: 'Interactive digital boards and multimedia-enabled teaching in every classroom.', img: 'https://picsum.photos/seed/xis-fac-smartclass/600/450' },
-    { title: 'Science Labs', desc: 'Dedicated Physics, Chemistry and Biology labs equipped for CBSE practicals.', img: 'https://picsum.photos/seed/xis-fac-sciencelab/600/450' },
-    { title: 'Computer Lab', desc: 'Modern systems with high-speed internet for coding and digital literacy.', img: 'https://picsum.photos/seed/xis-fac-computerlab/600/450' },
-    { title: 'Library', desc: 'Over 15,000 books, journals, and a dedicated digital reading corner.', img: 'https://picsum.photos/seed/xis-fac-library/600/450' },
-    { title: 'Sports Ground', desc: 'Large multi-purpose ground for football, cricket, athletics and PT.', img: 'https://picsum.photos/seed/xis-fac-sports/600/450' },
-    { title: 'Transport', desc: 'GPS-tracked buses on multiple routes across Anantnag district.', img: 'https://picsum.photos/seed/xis-fac-transport/600/450' },
-    { title: 'CCTV Surveillance', desc: '24x7 monitored campus with cameras in classrooms and common areas.', img: 'https://picsum.photos/seed/xis-fac-cctv/600/450' },
-    { title: 'Auditorium', desc: '500-seat air-conditioned auditorium for events and performances.', img: 'https://picsum.photos/seed/xis-fac-auditorium/600/450' },
-    { title: 'Cafeteria', desc: 'Hygienic in-house cafeteria serving nutritious meals and snacks.', img: 'https://picsum.photos/seed/xis-fac-cafeteria/600/450' },
-    { title: 'Medical Room', desc: 'On-campus first-aid room with a visiting doctor and trained nurse.', img: 'https://picsum.photos/seed/xis-fac-medical/600/450' }
+    { title: 'AI & Robotics Lab', desc: 'A cutting-edge lab giving students hands-on experience with the latest technologies, empowering them to become innovators and global tech leaders.', img: 'assets/gallery/robot-device.jpg' },
+    { title: 'Science Lab', desc: 'Well-equipped labs where practical work is conducted under qualified, expert supervision.', img: 'assets/gallery/science-lab.jpg' },
+    { title: 'Computer & Coding Lab', desc: 'Modern systems and high-tech panels supporting our IIT/NEET foundation classes and coding club.', img: 'assets/gallery/coding-lab-boys.jpg' },
+    { title: 'Smart Classrooms', desc: 'Elementary classes equipped with Smart TVs and higher classes with high-tech 4-in-1 panels, plus VR-enabled learning.', img: 'assets/gallery/vr-classroom.jpg' },
+    { title: 'Language Lab', desc: 'Technical tools that give students the best samples of pronunciation, helping them acquire languages quickly and easily.', img: 'assets/gallery/pen-book.jpg' },
+    { title: 'GPS-Tracked Transport', desc: 'Well-maintained buses plying all major routes across Anantnag and Kulgam districts, each equipped with precise GPS tracking.', img: 'assets/gallery/transport-buses-1.jpg' },
+    { title: 'Segregated, Secure Campus', desc: '60 well-ventilated rooms across 4 blocks, with completely separated academic blocks for boys and girls, under constant CCTV surveillance.', img: 'assets/gallery/graduation-group.jpg' },
+    { title: 'School Cinema', desc: 'A research-oriented program using specially created films to teach students life skills, values and attitudes — and to bring parents into the circle of learning.', img: 'assets/gallery/picnic-ride.jpg' }
   ];
 }

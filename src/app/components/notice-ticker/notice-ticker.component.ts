@@ -10,11 +10,11 @@ import { RouterLink } from '@angular/router';
 })
 export class NoticeTickerComponent {
   notices = [
-    'Admissions open for LKG–XII, Session 2026-27 — Apply before 30 Sept 2026',
-    'Annual Sports Day on 12 Sept 2026 at the Batengoo campus ground',
-    'Independence Day celebrations: school remains closed on 15 Aug',
-    'Parent-Teacher Meeting (PTM) scheduled for 6 Sept 2026',
-    'Result of Class X CBSE Board Exams declared — check Parent Portal',
-    'International Day of Peace celebration on 21 Sept 2026'
+    'Admissions open for Pre-Nursery to Class X — start your online enquiry today',
+    '100% Class X result with 100% distinctions, Session 2024-25',
+    '18+ Gold Medals across the International Maths, Science & English Olympiads, 2025',
+    'Bhat Saliq-ul-Islam wins Gold at the Junior National Thang Ta Championship 2024',
+    'Now offering IIT/NEET Foundation Classes from Class 6th to 10th',
+    '17 years of standing up for the students of South Kashmir'
   ];
 }

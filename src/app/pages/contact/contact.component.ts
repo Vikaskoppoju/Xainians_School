@@ -16,7 +16,7 @@ export class ContactComponent {
 
   constructor(private sanitizer: DomSanitizer) {
     this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-      'https://www.google.com/maps?q=Batengoo,+Anantnag,+Jammu+and+Kashmir&output=embed'
+      'https://www.google.com/maps?q=Uranhall,+Anantnag,+Jammu+and+Kashmir&output=embed'
     );
   }
 

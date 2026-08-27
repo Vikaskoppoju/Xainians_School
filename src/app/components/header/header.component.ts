@@ -42,30 +42,29 @@ export class HeaderComponent {
         { label: 'Management Team', path: '/about', desc: 'Meet the governing committee' },
         { label: 'Mandatory Disclosures', path: '/about', desc: 'Affiliation & compliance details' }
       ],
-      megaImage: 'https://picsum.photos/seed/xis-about-nav/640/480',
-      megaImageAlt: 'Xainians International School campus building'
+      megaImage: 'assets/gallery/pen-book.jpg',
+      megaImageAlt: 'Saint Xain\'s International School'
     },
     { label: 'Academics', path: '/academics',
       mega: [
-        { label: 'Curriculum · LKG–XII', path: '/academics', desc: 'Stage-wise academic structure' },
-        { label: 'Teaching Methods', path: '/academics', desc: 'International, activity-based pedagogy' },
-        { label: 'Academic Calendar', path: '/academics', desc: 'Terms, exams and vacations' },
-        { label: 'Exam Pattern', path: '/academics', desc: 'Assessment weightage per term' },
-        { label: 'Board Results', path: '/academics', desc: 'CBSE Class X & XII outcomes' }
+        { label: 'Curriculum · Pre-Nursery–X', path: '/academics', desc: 'Stage-wise academic structure' },
+        { label: 'Thinkroom & Teaching Methods', path: '/academics', desc: 'NEP 2020-aligned, activity-based pedagogy' },
+        { label: 'AI, Robotics & Language Labs', path: '/academics', desc: 'Hands-on technology and language learning' },
+        { label: 'Examination Wing', path: '/academics', desc: 'Transparent, fair assessment' },
+        { label: 'Board Results', path: '/academics', desc: 'Class X results & Kashmir Division ranks' }
       ],
-      megaImage: 'https://picsum.photos/seed/xis-academics-nav/640/480',
-      megaImageAlt: 'Students in a smart classroom'
+      megaImage: 'assets/gallery/robotics-lab-girls.jpg',
+      megaImageAlt: 'Students in the AI and Robotics Lab'
     },
     { label: 'Admissions', path: '/admissions',
       mega: [
         { label: 'Admission Process', path: '/admissions', desc: 'Four simple steps to enrol' },
-        { label: 'Online Enquiry Form', path: '/admissions', desc: 'Apply for Session 2026-27' },
-        { label: 'Fee Structure', path: '/admissions', desc: 'Grade-wise fee breakdown' },
-        { label: 'Scholarships', path: '/admissions', desc: 'Merit & need-based support' },
-        { label: 'Important Dates', path: '/admissions', desc: 'Key deadlines this session' }
+        { label: 'Online Enquiry Form', path: '/admissions', desc: 'Start your child\'s journey with us' },
+        { label: 'Eligibility & Age Criteria', path: '/admissions', desc: 'Grade-wise entry requirements' },
+        { label: 'Downloads', path: '/admissions', desc: 'Admission & transfer certificate forms' }
       ],
-      megaImage: 'https://picsum.photos/seed/xis-admissions-nav/640/480',
-      megaImageAlt: 'Prospective student visiting the campus'
+      megaImage: 'assets/gallery/graduation-group.jpg',
+      megaImageAlt: 'Graduation day at Saint Xain\'s International School'
     },
     { label: 'Faculty', path: '/faculty' },
     { label: 'Facilities', path: '/facilities' },
@@ -84,14 +83,17 @@ export class HeaderComponent {
     { term: 'fee payment', path: '/parent-portal' },
     { term: 'admission form', path: '/admissions' },
     { term: 'scholarship', path: '/admissions' },
-    { term: 'notice', path: '/news' },
-    { term: 'circular', path: '/news' },
-    { term: 'holiday list', path: '/news' },
+    { term: 'achievements', path: '/news' },
+    { term: 'olympiad', path: '/news' },
+    { term: 'sports', path: '/news' },
     { term: 'contact', path: '/contact' },
     { term: 'gallery', path: '/gallery' },
     { term: 'faculty', path: '/faculty' },
     { term: 'transport', path: '/facilities' },
     { term: 'facilities', path: '/facilities' },
+    { term: 'robotics', path: '/facilities' },
+    { term: 'ai lab', path: '/facilities' },
+    { term: 'thinkroom', path: '/academics' },
     { term: 'parent login', path: '/parent-portal' },
     { term: 'timetable', path: '/parent-portal' },
     { term: 'homework', path: '/parent-portal' }

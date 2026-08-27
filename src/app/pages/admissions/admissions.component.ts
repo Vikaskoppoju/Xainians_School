@@ -36,33 +36,26 @@ export class AdmissionsComponent {
   documentFile: File | null = null;
 
   process = [
-    { step: 1, title: 'Submit Online Enquiry', desc: 'Fill in the enquiry form below or call the admission office.' },
+    { step: 1, title: 'Submit Online Enquiry', desc: 'Fill in the enquiry form below, call, or message us on WhatsApp.' },
     { step: 2, title: 'Campus Visit & Document Check', desc: 'Bring birth certificate, previous report card, and transfer certificate (if applicable).' },
-    { step: 3, title: 'Student Interaction', desc: 'A short, friendly interaction/assessment appropriate to the grade.' },
-    { step: 4, title: 'Offer & Fee Payment', desc: 'Confirm the seat by paying the admission fee within the given window.' }
+    { step: 3, title: 'Student Interaction', desc: 'A short, friendly interaction appropriate to the grade being applied for.' },
+    { step: 4, title: 'Admission Confirmation', desc: 'Our admission office will guide you through fee payment and seat confirmation.' }
   ];
 
   ageCriteria = [
-    { grade: 'LKG', age: 'As of 31 March: 3+ years' },
-    { grade: 'UKG', age: 'As of 31 March: 4+ years' },
-    { grade: 'Class I', age: 'As of 31 March: 5+ years' },
-    { grade: 'Class II and above', age: 'Based on previous class completed' }
+    { grade: 'Pre-Nursery', age: 'As of 31 March: 2+ years' },
+    { grade: 'Nursery', age: 'As of 31 March: 3+ years' },
+    { grade: 'LKG', age: 'As of 31 March: 4+ years' },
+    { grade: 'Class I and above', age: 'Based on previous class completed' }
   ];
 
-  fees = [
-    { grade: 'LKG – UKG', admission: '₹8,000', tuitionPerAnnum: '₹36,000' },
-    { grade: 'I – V', admission: '₹9,000', tuitionPerAnnum: '₹42,000' },
-    { grade: 'VI – VIII', admission: '₹10,000', tuitionPerAnnum: '₹48,000' },
-    { grade: 'IX – X', admission: '₹11,000', tuitionPerAnnum: '₹54,000' },
-    { grade: 'XI – XII', admission: '₹12,500', tuitionPerAnnum: '₹60,000' }
-  ];
-
-  importantDates = [
-    { label: 'Enquiry Forms Open', date: '01 August 2026' },
-    { label: 'Last Date to Apply', date: '30 September 2026' },
-    { label: 'Interaction/Assessment', date: '05 – 15 October 2026' },
-    { label: 'Admission Confirmation', date: 'By 25 October 2026' },
-    { label: 'Session Begins', date: '01 April 2027' }
+  whyChooseUs = [
+    { title: '17 Years of Legacy', desc: 'Standing up for the students of South Kashmir since November 2007.' },
+    { title: '100% Class X Results', desc: 'A consistent record of 100% results with distinctions across recent sessions.' },
+    { title: 'Thinkroom & AI/Robotics', desc: 'NEP 2020-aligned Thinkroom pedagogy plus a dedicated AI & Robotics Lab.' },
+    { title: 'Safe & Secure Campus', desc: '4 blocks, 60 rooms, segregated boys\' and girls\' sections, under CCTV surveillance.' },
+    { title: 'GPS-Tracked Transport', desc: 'Buses covering all major routes across Anantnag and Kulgam districts.' },
+    { title: 'Transparent Examinations', desc: 'Students can access their answer scripts post-exam for full transparency.' }
   ];
 
   onFileSelected(event: Event) {

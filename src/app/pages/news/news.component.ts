@@ -8,38 +8,46 @@ import { CommonModule } from '@angular/common';
   styleUrl: './news.component.scss'
 })
 export class NewsComponent {
-  circulars = [
-    { date: '20 Aug 2026', title: 'Notice: Fee Payment Deadline Extended to 31 Aug' },
-    { date: '12 Aug 2026', title: 'Circular: PTM Schedule for Term I' },
-    { date: '05 Aug 2026', title: 'Circular: Uniform Guidelines for Winter Session' },
-    { date: '28 Jul 2026', title: 'Notice: Admission Enquiry Window Now Open' }
+  academicResults = [
+    { year: '2024-25', detail: '73 scholars appeared for Class X boards — 100% result, 100% distinctions. Abdul Hanan, Muhammad Tauha and Sania Maqbool Nisar ranked 3rd and 5th in the Kashmir Division.' },
+    { year: '2023-24', detail: 'All 51 students who appeared secured more than 450 marks. Madiha Bilal and Rahil Yousuf secured 2nd and 3rd position in the Kashmir Division.' },
+    { year: '2022-23', detail: '86 scholars appeared for Class X boards — 100% result, with 80 scholars scoring 450+ marks. Faisal Mehraj and Zaid Nisar secured 3rd position in the Kashmir Division.' },
+    { year: '2020-21', detail: '70 scholars appeared for Class X boards — 100% result, 100% distinctions, with one scholar bagging the 1st position in the Kashmir Division.' },
+    { year: '2019-20', detail: '55 scholars appeared for Class X boards — 100% result, 100% distinctions, with one scholar achieving the 2nd position in the Kashmir Division.' }
   ];
 
-  holidays = [
-    { occasion: 'Independence Day', date: '15 Aug 2026' },
-    { occasion: 'Eid-ul-Adha (tentative)', date: '27 Aug 2026' },
-    { occasion: 'Gandhi Jayanti', date: '02 Oct 2026' },
-    { occasion: 'Diwali Break', date: '08 – 12 Nov 2026' },
-    { occasion: 'Winter Vacation', date: '25 Dec 2026 – 02 Jan 2027' }
+  sportsAchievements = [
+    'Bhat Saliq-ul-Islam won Gold in the Junior National Thang Ta Championship 2024 (LNIPE Gwalior) and 3rd position in Phunaba Ama-60kg at the 6th Khelo India Youth Games, Tamil Nadu.',
+    'Babar Bashir was chosen for the Under-14 district cricket team (2025); Saad Nisar for the Under-17 district football team (2025).',
+    'Our students won gold, silver and bronze medals at the Thang Ta Tournament hosted by our school.',
+    'The school received 12 medals in Geet Kune Do (2019) and 15 medals in Wushu.',
+    'Adiyan Amin, Uzair and Karamat brought accolades in Kabaddi (2021); Soha Abbas and Munaza Shafi played Volleyball at the State level.',
+    'Soman Zahoor bagged 2nd position in an inter-zonal road race (2021); the school won the championship at an inter-zonal competition in 2022.'
   ];
 
-  competitions = [
-    { title: 'Inter-School Science Exhibition', date: '18 Sept 2026', desc: 'Hosted by Xainians International School for schools across Anantnag.' },
-    { title: 'National Level Painting Competition', date: '02 Oct 2026', desc: 'Open to students of Classes III–VIII across the region.' },
-    { title: 'Inter-House Debate Championship', date: '15 Oct 2026', desc: 'Annual debate competition among the four school houses.' }
+  olympiadHighlights = [
+    { exam: 'International Maths Olympiad (IMO)', count: '18+ Gold Medals, 2025' },
+    { exam: 'International Science Olympiad (ISO)', count: '20+ Gold Medals, 2025' },
+    { exam: 'International English Olympiad (IEO)', count: '12+ Gold Medals, 2025' }
   ];
 
-  achievements = [
-    'Class XII topper secured 98.5% in CBSE Board Exams 2025-26.',
-    'Under-14 football team — District Champions, 2025-26.',
-    'School bagged 1st prize at the Regional Science Fair, Srinagar.',
-    'Student selected for the State-level Robotics Olympiad Finals.'
-  ];
+  growthPartners = ['School Cinema', 'GNeet', 'Oxford International', 'Science Olympiad Foundation (SOF)'];
 
-  intlDays = [
-    { day: 'International Day of Peace', date: '21 Sept 2026' },
-    { day: 'World Teachers\' Day', date: '05 Oct 2026' },
-    { day: 'Children\'s Day', date: '14 Nov 2026' },
-    { day: 'International Mother Language Day', date: '21 Feb 2027' }
+  testimonials = [
+    {
+      quote: 'Saint Xain International School is a gateway where we enter and are able to see a beautiful transformation of the children in terms of self discovery, polishing up the potential of every child.',
+      name: 'S. Tariq',
+      role: 'Senior Journalist & Political Cartoonist, Kashmir Images'
+    },
+    {
+      quote: 'We are extremely happy and thankful to Saint Xain\'s for introducing us to the innovative teaching methodology which is Chrysalis. The overall impact in the field of education is remarkable.',
+      name: 'Hamidullah Allaie',
+      role: 'Senior Lecturer · Parent'
+    },
+    {
+      quote: 'We are so grateful to the management for maintaining marvelous quality in education. The painstaking efforts they are putting in stand unwavering.',
+      name: 'Hamidullah Dar',
+      role: 'Naib Tehsildar, Qaziqund · Parent'
+    }
   ];
 }

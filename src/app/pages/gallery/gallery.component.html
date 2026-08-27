@@ -1,11 +1,11 @@
 <section class="page-hero page-hero--media">
   <div class="page-hero__bg">
-    <img src="https://picsum.photos/seed/xis-gallery-hero/1800/700" alt="Students celebrating at a school event" loading="eager" />
+    <img src="assets/gallery/graduation-group.jpg" alt="Students celebrating at a school event" loading="eager" />
     <div class="page-hero__scrim"></div>
   </div>
   <div class="container page-hero__content">
     <h1>Gallery</h1>
-    <p>Moments from Annual Day, Picnics, Sports Day, class activities and our Batengoo campus.</p>
+    <p>Moments from Graduation Day, our AI &amp; Robotics Lab, picnics, and everyday life on campus.</p>
   </div>
 </section>
 
@@ -21,7 +21,6 @@
       <div class="gallery-item" *ngFor="let item of filtered">
         <div class="gallery-item__thumb">
           <img [src]="item.img" [alt]="item.title" loading="lazy" />
-          <span class="gallery-item__type">{{ item.type === 'video' ? '▶ Video' : '📷 Photo' }}</span>
         </div>
         <p>{{ item.title }}</p>
       </div>

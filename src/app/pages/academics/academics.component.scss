@@ -31,7 +31,14 @@
 }
 
 .result-card {
+  h3 { font-size: 1.15rem; }
+  p { color: var(--color-text-muted); margin: 0; }
+}
+
+.exam-wing {
+  max-width: 760px;
+  margin: 0 auto;
   text-align: center;
-  strong { display: block; font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-accent); }
-  span { font-size: 0.85rem; color: var(--color-text-muted); }
+  p { color: var(--color-text-muted); font-size: 1.05rem; }
+  .signature { font-weight: 600; color: var(--color-text); }
 }

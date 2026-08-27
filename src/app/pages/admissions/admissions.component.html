@@ -1,11 +1,11 @@
 <section class="page-hero page-hero--media">
   <div class="page-hero__bg">
-    <img src="https://picsum.photos/seed/xis-admissions-hero/1800/700" alt="Students walking into Xainians International School" loading="eager" />
+    <img src="assets/gallery/graduation-group.jpg" alt="Students at Saint Xain's International School" loading="eager" />
     <div class="page-hero__scrim"></div>
   </div>
   <div class="container page-hero__content">
     <h1>Admissions</h1>
-    <p>Session 2026-27 admissions are now open for LKG to XI.</p>
+    <p>Admissions are open for Pre-Nursery to Class X.</p>
   </div>
 </section>
 
@@ -40,8 +40,8 @@
     <div class="card eligibility-card">
       <h3>Eligibility</h3>
       <ul>
-        <li>Valid birth certificate for LKG/UKG/Class I admissions.</li>
-        <li>Report card and Transfer Certificate for lateral entries (Class II onwards).</li>
+        <li>Valid birth certificate for Pre-Nursery/Nursery/LKG admissions.</li>
+        <li>Report card and Transfer Certificate for lateral entries (Class I onwards).</li>
         <li>Aadhaar card copy of the student (if available).</li>
         <li>4 recent passport-size photographs of the student.</li>
         <li>Residence proof of parent/guardian.</li>
@@ -74,8 +74,8 @@
             Grade Applying For *
             <select name="gradeApplying" [(ngModel)]="model.gradeApplying" required #grade="ngModel">
               <option value="" disabled selected>Select grade</option>
-              <option>LKG</option><option>UKG</option>
-              <option *ngFor="let g of [1,2,3,4,5,6,7,8,9,10,11,12]">Class {{ g }}</option>
+              <option>Pre-Nursery</option><option>Nursery</option><option>LKG</option>
+              <option *ngFor="let g of [1,2,3,4,5,6,7,8,9,10]">Class {{ g }}</option>
             </select>
             <small class="error" *ngIf="grade.invalid && grade.touched">Required</small>
           </label>
@@ -120,20 +120,18 @@
 
       <div class="download-card">
         <div class="download-card__media">
-          <img src="https://picsum.photos/seed/xis-admissions-side/600/400" alt="Student receiving admission counselling" loading="lazy" />
+          <img src="assets/gallery/graduation-handshake.jpg" alt="Student receiving their certificate" loading="lazy" />
         </div>
         <div class="card download-card__body">
         <h3>📄 Downloads</h3>
         <ul class="download-list">
           <li><a href="assets/downloads/admission-form.pdf" download>Admission Form (PDF)</a></li>
           <li><a href="assets/downloads/transfer-certificate-form.pdf" download>Transfer Certificate Form (PDF)</a></li>
-          <li><a href="assets/downloads/fee-structure.pdf" download>Fee Structure (PDF)</a></li>
-          <li><a href="assets/downloads/academic-calendar.pdf" download>Academic Calendar (PDF)</a></li>
         </ul>
-        <h3>🎓 Scholarships</h3>
-        <p>Merit and need-based scholarships are available for meritorious students and children of defense
-          personnel/single-parent households. Up to 50% tuition fee waiver, assessed case-by-case. Contact the
-          admission office for the scholarship application form.</p>
+        <h3>📞 Talk to Us</h3>
+        <p>For fee structure and scholarship guidance, reach our admission office directly at
+          <a href="tel:+919596017941">+91 95960 17941</a> or
+          <a href="mailto:sxiskashmir@gmail.com">sxiskashmir&#64;gmail.com</a>.</p>
         </div>
       </div>
     </div>
@@ -143,29 +141,13 @@
 <section class="section section--alt">
   <div class="container">
     <div class="section-title">
-      <h2>Fee Structure</h2>
-      <p>Indicative annual fee — final structure shared at the time of admission.</p>
-    </div>
-    <div class="table-wrap">
-      <table class="disclosure-table">
-        <thead><tr><th>Grade</th><th>Admission Fee (one-time)</th><th>Tuition Fee (per annum)</th></tr></thead>
-        <tbody>
-          <tr *ngFor="let f of fees"><td>{{ f.grade }}</td><td>{{ f.admission }}</td><td>{{ f.tuitionPerAnnum }}</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-title">
-      <h2>Important Dates</h2>
+      <h2>Why Choose Saint Xain's</h2>
+      <p>What sets our school apart for your child's education.</p>
     </div>
     <div class="grid grid--3">
-      <div class="card" *ngFor="let d of importantDates">
-        <h3>{{ d.date }}</h3>
-        <p>{{ d.label }}</p>
+      <div class="card" *ngFor="let w of whyChooseUs">
+        <h3>{{ w.title }}</h3>
+        <p>{{ w.desc }}</p>
       </div>
     </div>
   </div>
